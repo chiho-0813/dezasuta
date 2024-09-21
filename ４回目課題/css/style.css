@@ -209,4 +209,25 @@ header {
   .pc_nav {
     display: none;
   }
+  .sp_btn {
+    display: block;
+    height: 23px;
+    cursor: pointer;
+  }
+  .sp_btn span {
+    display: block;
+    width: 33px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+  .sp_btn span::before,
+  .sp_btn span::after {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
 }
