@@ -220,6 +220,8 @@ header {
     height: 3px;
     background-color: #fff;
     border-radius: 2px;
+    position: relative;
+    top: 10px;
   }
   .sp_btn span::before,
   .sp_btn span::after {
@@ -229,5 +231,23 @@ header {
     height: 3px;
     background-color: #fff;
     border-radius: 2px;
+    position: absolute;
+  }
+  .sp_btn span::before {
+    bottom: 10px;
+  }
+  .sp_btn span::after {
+    top: 10px;
+  }
+  .sp_btn.open span {
+    background-color: transparent;
+  }
+  .sp_btn.open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  .sp_btn.open span::after {
+    top: 0;
+    transform: rotate(-45deg);
   }
 }

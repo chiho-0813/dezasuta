@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DESIGN CAFE</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                     <li><a href="">ACCESS</a></li>
                 </ul>
             </nav>
-            <div class="sp_btn">
+            <div class="sp_btn ">
                 <span></span>
             </div>
             <nav class="sp_nav">
@@ -93,7 +94,13 @@
         </div>
 
     </section>
-
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('sp_btn').toggleClass('open');
+            })
+        })
+    </script>
 </body>
 
 </html>
