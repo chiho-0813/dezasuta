@@ -13,7 +13,10 @@
     <header>
         <div class="header_slider">
             <div>
-                <img src="./images/pc_first-100.jpg" alt="">
+                <picture>
+                    <source srcset=./images/sp_main_vs@2x-100.jpg media="(max-width:767px)">
+                    <img src="./images/pc_first-100.jpg" alt="">
+                </picture>
             </div>
         </div>
         <div class="header_wrap">
@@ -22,11 +25,11 @@
             </h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">EVENT</a></li>
-                    <li><a href="">ACCESS</a></li>
+                    <li><a href="#about_us">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
             <div class="sp_btn ">
@@ -65,39 +68,103 @@
         </div>
         <div class="menu_contents">
             <div class="menu_drink">
-                <div>
+                <div class="menu_image">
                     <img src="./images/pc_menu_drink-100.jpg" class="menu_photo">
-                    <p class="drink_label">Drink</p>
+                    <p class="menu_label">Drink</p>
                 </div>
                 <p class="menu_text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
             </div>
             <div class="menu_food">
-                <div>
+                <div class="menu_image">
                     <img src="./images/pc_menu_food-100.jpg" class="menu_photo">
-                    <p class="food_label">Food</p>
+                    <p class="menu_label">Food</p>
                 </div>
                 <p class="menu_text">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
             </div>
             <div class="menu_sweet">
-                <div>
+                <div class="menu_image">
                     <img src="./images/pc_menu_sweets-100.jpg" class="menu_photo">
-                    <p class="sweet_label">Sweet</p>
+                    <p class="menu_label">Sweet</p>
                 </div>
                 <p class="menu_text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
             </div>
         </div>
     </section>
     <section id="gallery" class="gallery">
-        <div class="gallery_imege">
-            <img src="./images/gallery@2x.png" class="gallery_logo">
-
+        <div class="gallery_content">
+            <div class="gallery_imege">
+                <img src="./images/gallery@2x.png" class="gallery_logo">
+            </div>
+            <div class="gallery_photo">
+                <img src="./images/pc_gallary_05-100.jpg">
+                <img src="./images/pc_gallary_04-100.jpg">
+                <img src="./images/pc_gallary_03-100.jpg">
+                <img src="./images/pc_gallary_02-100.jpg">
+                <img src="./images/pc_gallary_01-100.jpg">
+            </div>
         </div>
-
     </section>
+    <section id="event" class="event">
+        <div class="event_content">
+            <div class="event_image">
+                <img src="./images/event@2x.png" class="event_logo">
+            </div>
+            <div class="event_news">
+                <ul class="event_list">
+                    <li class="event_list1">
+                        <time datetime="2020.6.23">2020.6.23</time>
+                        <p class="event_text">7月はイベント出店のため0/0お休みします</p>
+                    </li>
+                    <li class="event_list1">
+                        <time datetime="2020.03.15">2020.03.15</time>
+                        <p class="event_text">春の新商品発売。話題のあのブランドとコラボ</p>
+                    </li>
+                    <li class="event_list1">
+                        <time datetime="2020.0206">2020.02.06</time>
+                        <p class="event_text">コーヒーの日で30%OFFイベントを開催[3日間限定]</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="access" class="access">
+        <div class="access_content">
+            <div class="access_imege">
+                <img src="./images/access@2x.png" class="access_logo">
+            </div>
+            <div class="access_map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.76057619662!2d139.69914691127605!3d35.65827007248046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b582db83523%3A0x10c81d18a613927f!2z44CSMTUwLTAwMDIg5p2x5Lqs6YO95riL6LC35Yy65riL6LC377yS5LiB55uu77yS77yUIOWNlw!5e0!3m2!1sja!2sjp!4v1726975680766!5m2!1sja!2sjp"
+                    width="1920" height="471" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_imege">
+                <div>
+                    <img src="./images/design_cafe_logo_footer@2x.png" class="footer_logo">
+                </div>
+                <div class="footer_address">
+                    <p>OPEN 18:00 / CLOSE 24:00</p>
+                    <p>〒150-0022</p>
+                    <p>東京都渋谷区東京南123デザインビルB1</p>
+                    <p>MAIL:info@designcafe.tokyo</p>
+                </div>
+            </div>
+            <p class="footer_copyright">© 2021 DESIGN CAFE</p>
+            <div class="page_top">
+                <a href=""><img src="./images/to_top@2x.png"></a>
+            </div>
+        </div>
+    </footer>
     <script>
         $(function () {
             $('.sp_btn').on('click', function () {
-                $('sp_btn').toggleClass('open');
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
             })
         })
     </script>

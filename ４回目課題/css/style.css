@@ -90,7 +90,7 @@ header {
 }
 
 .message {
-  max-width: 863px;
+  max-width: 1000px;
   margin: 102px auto 93px;
   text-align: center;
 }
@@ -116,6 +116,7 @@ header {
   max-width: 1000px;
   margin: 0 auto;
   align-items: center;
+  justify-content: space-around;
 }
 
 .about_us_photo {
@@ -160,48 +161,149 @@ header {
 
 .menu_contents {
   display: flex;
+  justify-content: space-between;
+}
+
+.menu_image {
   position: relative;
 }
 
-.menu_drink {
-  margin-right: 49px;
+.menu_drink,
+.menu_food,
+.menu_sweet {
+  width: 30%;
 }
 .menu_photo {
   border-top-right-radius: 42px;
 }
 
-.drink_label {
+.menu_label {
   position: absolute;
-  top: 187px;
-  left: 13px;
+  top: 95%;
+  left: 4%;
   font-size: 38px;
   color: #d30202;
 }
 
-.food_label {
-  position: absolute;
-  top: 187px;
-  left: 363px;
-  font-size: 38px;
-  color: #d30202;
-}
-
-.sweet_label {
-  position: absolute;
-  top: 187px;
-  left: 714px;
-  font-size: 38px;
-  color: #d30202;
-}
 .menu_text {
   padding-top: 43px;
   font-size: 17px;
   width: 300px;
 }
-.menu_food {
-  margin-right: 49px;
+
+.gallery {
+  max-width: 1920px;
+  margin: 0 auto;
+  text-align: center;
 }
 
+.gallery_logo {
+  width: 245px;
+  margin: 0 auto 14px auto;
+}
+
+.gallery_photo {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin-bottom: 58px;
+}
+
+.event {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.event_logo {
+  width: 174px;
+  margin: 0 auto 32px auto;
+}
+
+.event_news {
+  background: #fff;
+  border: #4f260b solid 4px;
+}
+
+.event_list {
+  padding-top: 38px;
+  padding-bottom: 38px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.event_list1 {
+  margin: 0 auto;
+  align-items: center;
+  font-size: 23px;
+  display: flex;
+  line-height: 1.96;
+}
+
+.event_text {
+  padding-left: 55px;
+  border-bottom: #4f260b solid 1px;
+}
+
+.access {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.access_imege {
+  text-align: center;
+  margin: 68px auto 37px auto;
+}
+
+.access_logo {
+  width: 214px;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+}
+
+.footer {
+  height: 393px;
+  background: #fff;
+}
+
+.footer_content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer_imege {
+  display: flex;
+}
+
+.footer_logo {
+  width: 227px;
+  margin-top: 75px;
+}
+
+.footer_address {
+  align-items: center;
+  font-size: 20px;
+  margin-top: 74px;
+  margin-left: 42px;
+  margin-bottom: 74px;
+}
+
+.footer_address p {
+  line-height: 1.95;
+}
+.footer_copyright {
+  text-align: center;
+}
+
+.page_top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 125px;
+}
 .sp_nav {
   display: none;
 }
@@ -213,6 +315,10 @@ header {
     display: block;
     height: 23px;
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 2;
   }
   .sp_btn span {
     display: block;
@@ -222,6 +328,7 @@ header {
     border-radius: 2px;
     position: relative;
     top: 10px;
+    transition: 0.3s;
   }
   .sp_btn span::before,
   .sp_btn span::after {
@@ -232,6 +339,7 @@ header {
     background-color: #fff;
     border-radius: 2px;
     position: absolute;
+    transition: 0.3s;
   }
   .sp_btn span::before {
     bottom: 10px;
@@ -249,5 +357,29 @@ header {
   .sp_btn.open span::after {
     top: 0;
     transform: rotate(-45deg);
+  }
+  .sp_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+
+  .sp_nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .sp_nav ul li {
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+      "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   }
 }
