@@ -25,6 +25,7 @@ li {
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
     "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
     "ＭＳ 明朝", serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -93,6 +94,7 @@ header {
   max-width: 1000px;
   margin: 102px auto 93px;
   text-align: center;
+  padding: 10px;
 }
 .text1 {
   font-size: 30px;
@@ -105,8 +107,12 @@ header {
   font-feature-settings: "palt";
 }
 
+.sp_br {
+  display: none;
+}
+
 .text3 {
-  font-size: 16px;
+  font-size: 23px;
   line-height: 1.65;
   font-feature-settings: "palt";
 }
@@ -117,6 +123,7 @@ header {
   margin: 0 auto;
   align-items: center;
   justify-content: space-around;
+  padding: 10px;
 }
 
 .about_us_photo {
@@ -141,6 +148,7 @@ header {
 }
 .about_us_text2 {
   font-size: 16px;
+  margin-top: 21px;
   font-feature-settings: "palt";
   line-height: 1.62;
 }
@@ -148,6 +156,7 @@ header {
 .menu {
   max-width: 1000px;
   margin: 89px auto 40px;
+  padding: 10px;
 }
 
 .menu_image {
@@ -188,7 +197,6 @@ header {
 .menu_text {
   padding-top: 43px;
   font-size: 17px;
-  width: 300px;
 }
 
 .gallery {
@@ -213,6 +221,7 @@ header {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
+  padding: 10px;
 }
 
 .event_logo {
@@ -241,7 +250,7 @@ header {
 }
 
 .event_text {
-  padding-left: 55px;
+  margin-left: 55px;
   border-bottom: #4f260b solid 1px;
 }
 
@@ -267,6 +276,7 @@ iframe {
 .footer {
   height: 393px;
   background: #fff;
+  padding: 10px;
 }
 
 .footer_content {
@@ -381,5 +391,47 @@ iframe {
     font-size: 18px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
       "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  }
+
+  .text1 {
+    font-size: 26px;
+  }
+
+  .text2 {
+    font-size: 70px;
+  }
+
+  .text3 {
+    font-size: 19px;
+  }
+  .about_us_logo {
+    width: 60%;
+    margin-top: 0;
+  }
+
+  .about_us_text1 {
+    font-size: 37px;
+    margin-bottom: 20px;
+  }
+
+  .about_us_text2 {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .text1 {
+    font-size: 17px;
+  }
+  .text2 {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+  .text3 {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+  .sp_br {
+    display: inline;
   }
 }
