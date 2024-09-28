@@ -99,11 +99,13 @@ header {
 .text1 {
   font-size: 30px;
   margin-bottom: 46px;
+  font-feature-settings: "palt";
 }
 .text2 {
   font-size: 82px;
   margin-bottom: 20px;
   line-height: 1.17;
+  letter-spacing: 0.1em;
   font-feature-settings: "palt";
 }
 
@@ -114,6 +116,7 @@ header {
 .text3 {
   font-size: 23px;
   line-height: 1.65;
+  letter-spacing: 0.1em;
   font-feature-settings: "palt";
 }
 
@@ -197,6 +200,7 @@ header {
 .menu_text {
   padding-top: 43px;
   font-size: 17px;
+  font-feature-settings: "palt";
 }
 
 .gallery {
@@ -252,6 +256,7 @@ header {
 .event_text {
   margin-left: 55px;
   border-bottom: #4f260b solid 1px;
+  font-feature-settings: "palt";
 }
 
 .access {
@@ -299,6 +304,7 @@ iframe {
   margin-top: 74px;
   margin-left: 42px;
   margin-bottom: 74px;
+  font-feature-settings: "palt";
 }
 
 .footer_address p {
@@ -306,6 +312,7 @@ iframe {
 }
 .footer_copyright {
   text-align: center;
+  font-feature-settings: "palt";
 }
 
 .page_top {
@@ -398,7 +405,7 @@ iframe {
   }
 
   .text2 {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .text3 {
@@ -422,16 +429,24 @@ iframe {
 @media screen and (max-width: 767px) {
   .text1 {
     font-size: 17px;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 22px;
   }
   .text2 {
     font-size: 38px;
     line-height: 1.15;
+    letter-spacing: 0.02em;
+    max-width: 320px;
+    margin: 0 auto;
   }
   .text3 {
     font-size: 16px;
     line-height: 1.87;
+    max-width: 320px;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
   }
-
   .sp_br {
     display: inline;
   }
