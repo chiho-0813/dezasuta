@@ -94,12 +94,11 @@ header {
   max-width: 1000px;
   margin: 102px auto 93px;
   text-align: center;
-  padding: 10px;
 }
 .text1 {
   font-size: 30px;
-  margin-bottom: 46px;
   font-feature-settings: "palt";
+  margin-bottom: 46px;
 }
 .text2 {
   font-size: 82px;
@@ -168,10 +167,6 @@ header {
   padding: 10px;
 }
 
-.menu_image {
-  text-align: center;
-}
-
 .menu_logo {
   width: 151px;
   margin-bottom: 39px;
@@ -184,6 +179,7 @@ header {
 
 .menu_image {
   position: relative;
+  text-align: center;
 }
 
 .menu_drink,
@@ -193,6 +189,10 @@ header {
 }
 .menu_photo {
   border-top-right-radius: 42px;
+}
+
+.sp_menu_photo {
+  display: none;
 }
 
 .menu_label {
@@ -430,23 +430,27 @@ iframe {
 }
 
 @media screen and (max-width: 767px) {
+  .message {
+    max-width: 320px;
+    margin: 42px auto 52px;
+  }
+
   .text1 {
     font-size: 17px;
-    max-width: 320px;
-    margin: 0 auto;
+    width: 100%;
     margin-bottom: 22px;
   }
   .text2 {
     font-size: 38px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    max-width: 320px;
-    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 22px;
   }
   .text3 {
     font-size: 16px;
     line-height: 1.87;
-    max-width: 320px;
+    width: 100%;
     margin: 0 auto;
     letter-spacing: 0.1em;
   }
@@ -457,6 +461,7 @@ iframe {
   .pc_br {
     display: none;
   }
+
   .about_us {
     flex-direction: column;
   }
@@ -467,26 +472,70 @@ iframe {
 
   .sp_about_us_photo {
     display: block;
-    max-width: 100%;
+    width: 100%;
     margin-top: 10px;
   }
 
+  .about_us_text {
+    display: contents;
+  }
   .about_us_text1 {
     font-size: 36px;
     line-height: 1.25;
     align-items: center;
-    width: 320px;
+    margin: 35px auto 0px;
   }
 
   .about_us_text2 {
     font-size: 16px;
     line-height: 1.75;
     align-items: center;
-    width: 320px;
+    margin: 19px 18px 0px;
   }
 
   .about_us_logo {
     width: 160px;
     margin-top: 52px auto 0 auto;
+    order: -1;
+  }
+
+  .menu {
+    margin: 56px;
+    margin: 50px 40px 43px 40px;
+  }
+  .menu_logo {
+    width: 88px;
+    margin-bottom: 15px;
+  }
+  .menu_contents {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .menu_drink,
+  .menu_food,
+  .menu_sweet {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .menu_label {
+    font-size: 40px;
+    font-feature-settings: "palt";
+  }
+
+  .menu_text {
+    line-height: 1.58;
+    margin-bottom: 54px;
+    padding-top: 54px;
+  }
+  .menu_photo {
+    display: none;
+  }
+
+  .sp_menu_photo {
+    display: block;
+    border-top-right-radius: 42px;
   }
 }
