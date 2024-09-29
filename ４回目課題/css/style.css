@@ -126,7 +126,6 @@ header {
   margin: 0 auto;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
 }
 
 .about_us_photo {
@@ -134,9 +133,16 @@ header {
   border-bottom-right-radius: 82px;
 }
 
+.sp_about_us_photo {
+  display: none;
+}
+
 .about_us_text {
-  width: 41%;
-  margin-left: 56px;
+  width: 42%;
+}
+
+.about_us_text1 .about_us_text2 {
+  display: flex;
 }
 
 .about_us_logo {
@@ -151,7 +157,7 @@ header {
 }
 .about_us_text2 {
   font-size: 16px;
-  margin-top: 21px;
+  margin-top: 23px;
   font-feature-settings: "palt";
   line-height: 1.62;
 }
@@ -411,18 +417,15 @@ iframe {
   .text3 {
     font-size: 19px;
   }
-  .about_us_logo {
-    width: 60%;
-    margin-top: 0;
-  }
 
   .about_us_text1 {
-    font-size: 37px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    letter-spacing: 2px;
   }
 
   .about_us_text2 {
-    font-size: 13px;
+    font-size: 10px;
+    letter-spacing: 2px;
   }
 }
 
@@ -449,5 +452,41 @@ iframe {
   }
   .sp_br {
     display: inline;
+  }
+
+  .pc_br {
+    display: none;
+  }
+  .about_us {
+    flex-direction: column;
+  }
+
+  .about_us_photo {
+    display: none;
+  }
+
+  .sp_about_us_photo {
+    display: block;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .about_us_text1 {
+    font-size: 36px;
+    line-height: 1.25;
+    align-items: center;
+    width: 320px;
+  }
+
+  .about_us_text2 {
+    font-size: 16px;
+    line-height: 1.75;
+    align-items: center;
+    width: 320px;
+  }
+
+  .about_us_logo {
+    width: 160px;
+    margin-top: 52px auto 0 auto;
   }
 }
