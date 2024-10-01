@@ -26,6 +26,7 @@ li {
     "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
     "ＭＳ 明朝", serif;
   scroll-behavior: smooth;
+  font-feature-settings: "palt";
 }
 
 a {
@@ -59,6 +60,20 @@ header {
   position: relative;
 }
 
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: #fff;
+  font-size: 20px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
 .header_wrap {
   display: flex;
   justify-content: space-between;
@@ -90,6 +105,7 @@ header {
   width: 226px;
 }
 
+/* message */
 .message {
   max-width: 1000px;
   margin: 102px auto 93px;
@@ -105,7 +121,6 @@ header {
   margin-bottom: 20px;
   line-height: 1.17;
   letter-spacing: 0.1em;
-  font-feature-settings: "palt";
 }
 
 .sp_br {
@@ -116,9 +131,9 @@ header {
   font-size: 23px;
   line-height: 1.65;
   letter-spacing: 0.1em;
-  font-feature-settings: "palt";
 }
 
+/* about_us */
 .about_us {
   display: flex;
   max-width: 1000px;
@@ -152,24 +167,22 @@ header {
   font-size: 44px;
   line-height: 1.39;
   margin-top: 49px;
-  font-feature-settings: "palt";
 }
 .about_us_text2 {
   font-size: 16px;
   margin-top: 23px;
-  font-feature-settings: "palt";
   line-height: 1.62;
 }
 
+/* menu */
 .menu {
   max-width: 1000px;
-  margin: 89px auto 40px;
-  padding: 10px;
+  margin: 0 auto;
 }
 
 .menu_logo {
   width: 151px;
-  margin-bottom: 39px;
+  margin: 89px auto 39px auto;
 }
 
 .menu_contents {
@@ -186,6 +199,7 @@ header {
 .menu_food,
 .menu_sweet {
   width: 30%;
+  margin-bottom: 93px;
 }
 .menu_photo {
   border-top-right-radius: 42px;
@@ -209,6 +223,7 @@ header {
   font-feature-settings: "palt";
 }
 
+/* gallery */
 .gallery {
   max-width: 1920px;
   margin: 0 auto;
@@ -217,7 +232,7 @@ header {
 
 .gallery_logo {
   width: 245px;
-  margin: 0 auto 14px auto;
+  margin: auto 14px auto;
 }
 
 .gallery_photo {
@@ -227,11 +242,15 @@ header {
   margin-bottom: 58px;
 }
 
+.sp_gallery_photo {
+  display: none;
+}
+
+/* event */
 .event {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
-  padding: 10px;
 }
 
 .event_logo {
@@ -265,6 +284,7 @@ header {
   font-feature-settings: "palt";
 }
 
+/* access */
 .access {
   max-width: 1920px;
   margin: 0 auto;
@@ -284,6 +304,7 @@ iframe {
   width: 100%;
 }
 
+/* footer */
 .footer {
   height: 393px;
   background: #fff;
@@ -310,7 +331,6 @@ iframe {
   margin-top: 74px;
   margin-left: 42px;
   margin-bottom: 74px;
-  font-feature-settings: "palt";
 }
 
 .footer_address p {
@@ -318,7 +338,6 @@ iframe {
 }
 .footer_copyright {
   text-align: center;
-  font-feature-settings: "palt";
 }
 
 .page_top {
@@ -330,7 +349,9 @@ iframe {
 .sp_nav {
   display: none;
 }
+
 @media screen and (max-width: 1100px) {
+  /*header*/
   .pc_nav {
     display: none;
   }
@@ -406,6 +427,7 @@ iframe {
       "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   }
 
+  /*message*/
   .text1 {
     font-size: 26px;
   }
@@ -418,33 +440,31 @@ iframe {
     font-size: 19px;
   }
 
+  /*about_us*/
   .about_us_text1 {
     font-size: 36px;
     letter-spacing: 2px;
   }
 
-  .about_us_text2 {
-    font-size: 10px;
-    letter-spacing: 2px;
+  .event {
+    margin: 0 5%;
   }
 }
 
 @media screen and (max-width: 767px) {
+  /*message*/
   .message {
     max-width: 320px;
-    margin: 42px auto 52px;
+    margin: 42px auto 0;
   }
-
   .text1 {
     font-size: 17px;
-    width: 100%;
     margin-bottom: 22px;
   }
   .text2 {
-    font-size: 38px;
+    font-size: 32px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    width: 100%;
     margin-bottom: 22px;
   }
   .text3 {
@@ -462,80 +482,114 @@ iframe {
     display: none;
   }
 
+  /*sbout_us*/
   .about_us {
     flex-direction: column;
   }
-
   .about_us_photo {
     display: none;
   }
-
   .sp_about_us_photo {
     display: block;
     width: 100%;
-    margin-top: 10px;
   }
-
   .about_us_text {
     display: contents;
+    max-width: 320px;
   }
   .about_us_text1 {
-    font-size: 36px;
     line-height: 1.25;
-    align-items: center;
-    margin: 35px auto 0px;
+    margin: 35px auto 31px;
+    text-align: left;
   }
-
   .about_us_text2 {
     font-size: 16px;
     line-height: 1.75;
     align-items: center;
-    margin: 19px 18px 0px;
+    margin: 0 5%;
   }
-
   .about_us_logo {
     width: 160px;
-    margin-top: 52px auto 0 auto;
+    margin: 52px auto 10px;
     order: -1;
   }
 
+  /*menu*/
   .menu {
-    margin: 56px;
-    margin: 50px 40px 43px 40px;
+    margin: 50px 38px 89px 38px;
   }
   .menu_logo {
     width: 88px;
-    margin-bottom: 15px;
+    margin: 0 0 17px 0;
   }
   .menu_contents {
     flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
   }
-
   .menu_drink,
   .menu_food,
   .menu_sweet {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
   }
-
   .menu_label {
     font-size: 40px;
-    font-feature-settings: "palt";
   }
-
   .menu_text {
     line-height: 1.58;
-    margin-bottom: 54px;
     padding-top: 54px;
   }
   .menu_photo {
     display: none;
   }
-
   .sp_menu_photo {
     display: block;
     border-top-right-radius: 42px;
+  }
+
+  /*gallery*/
+  .gallery_photo {
+    display: none;
+  }
+  .sp_gallery_photo {
+    display: block;
+    width: 100%;
+  }
+  .gallery_logo {
+    width: 142px;
+    margin-bottom: 15px;
+  }
+
+  /*event*/
+  .event_logo {
+    width: 101px;
+    margin: 27px auto 15px;
+  }
+}
+.event_list1 {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 29px;
+  font-size: 16px;
+}
+
+.event_text {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 334px) {
+  /*massge*/
+  .text2 {
+    font-size: 31px;
+  }
+  .text3 {
+    font-size: 15px;
+  }
+
+  /*about_us*/
+  .about_us_text1 {
+    font-size: 34px;
   }
 }
