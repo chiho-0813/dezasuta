@@ -114,18 +114,51 @@
                 <img src="./images/gallery@2x.png" class="gallery_logo">
             </div>
             <div class="gallery_photo">
-                <img src="./images/pc_gallary_05-100.jpg">
-                <img src="./images/pc_gallary_04-100.jpg">
-                <img src="./images/pc_gallary_03-100.jpg">
-                <img src="./images/pc_gallary_02-100.jpg">
-                <img src="./images/pc_gallary_01-100.jpg">
+                <div>
+                    <picture>
+                        <source srcset="./images/pc_gallary_01-100.jpg" media="(max-width:767px)">
+                        <img src="./images/pc_gallary_01-100.jpg" alt="">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="./images/pc_gallary_02-100.jpg" media="(max-width:767px)">
+                        <img src="./images/pc_gallary_02-100.jpg" alt="">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="./images/pc_gallary_03-100" media="(max-width:767px)">
+                        <img src="./images/pc_gallary_03-100.jpg" alt="">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="./images/pc_gallary_04-100.jpg" media="(max-width:767px)">
+                        <img src="./images/pc_gallary_04-100.jpg" alt="">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="./images/pc_gallary_05-100.jpg" media="(max-width:767px)">
+                        <img src="./images/pc_gallary_05-100.jpg" alt="">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="./images/pc_gallary_01-100.jpg" media="(max-width:767px)">
+                        <img src="./images/pc_gallary_01-100.jpg" alt="">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="./images/mobile_gallery_02-100.jpg" media="(max-width:767px)">
+                        <img src="./images/pc_gallary_02-100.jpg" alt="">
+                    </picture>
+                </div>
             </div>
-            <div>
-                <img src="./images/mobile_gallery-100.jpg" class="sp_gallery_photo">
-            </div>
-        </div>
     </section>
-    <section id="event" class="event">
+    <section id=" event" class="event">
         <div class="event_content">
             <div class="event_image">
                 <img src="./images/event@2x.png" class="event_logo">
@@ -194,8 +227,26 @@
                 dots: true,
                 arrows: false
             })
-        })
+
+            $('.gallery_photo').slock({
+                infinite: false,
+                speed: 300,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        speed: 300,
+                    }
+                }]
+            })
+        });
+
     </script>
+
 </body>
 
 </html>
