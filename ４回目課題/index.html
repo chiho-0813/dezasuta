@@ -8,10 +8,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
 </head>
 
 <body>
@@ -49,11 +50,11 @@
             </div>
             <nav class="sp_nav">
                 <ul>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">EVENT</a></li>
-                    <li><a href="">ACCESS</a></li>
+                    <li><a href="#about_us">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
         </div>
@@ -117,47 +118,56 @@
                 <div>
                     <picture>
                         <source srcset="./images/pc_gallary_01-100.jpg" media="(max-width:767px)">
-                        <img src="./images/pc_gallary_01-100.jpg" alt="">
+                        <a href="./images/pc_gallary_01-100.jpg" class="js_gallery_modal"
+                            data-group="gallery_modal"><img src="./images/pc_gallary_01-100.jpg" alt=""></a>
                     </picture>
                 </div>
                 <div>
                     <picture>
                         <source srcset="./images/pc_gallary_02-100.jpg" media="(max-width:767px)">
-                        <img src="./images/pc_gallary_02-100.jpg" alt="">
+                        <a href="./images/pc_gallary_02-100.jpg" class="js_gallery_modal"
+                            data-group="gallery_modal"><img src="./images/pc_gallary_02-100.jpg" alt=""></a>
                     </picture>
                 </div>
                 <div>
                     <picture>
-                        <source srcset="./images/pc_gallary_03-100" media="(max-width:767px)">
-                        <img src="./images/pc_gallary_03-100.jpg" alt="">
+                        <source srcset="./images/pc_gallary_03-.jpg" media="(max-width:767px)">
+                        <a href="./images/pc_gallary_03-100.jpg" class="js_gallery_modal" data-group="gallery_modal">
+                            <img src="./images/pc_gallary_03-100.jpg" alt=""></a>
                     </picture>
                 </div>
                 <div>
                     <picture>
                         <source srcset="./images/pc_gallary_04-100.jpg" media="(max-width:767px)">
-                        <img src="./images/pc_gallary_04-100.jpg" alt="">
+                        <a href="./images/pc_gallary_04-100.jpg" class="js_gallery_modal" data-group="gallery_modal">
+                            <img src="./images/pc_gallary_04-100.jpg" alt=""></a>
                     </picture>
                 </div>
                 <div>
                     <picture>
                         <source srcset="./images/pc_gallary_05-100.jpg" media="(max-width:767px)">
-                        <img src="./images/pc_gallary_05-100.jpg" alt="">
+                        <a href="./images/pc_gallary_05-100.jpg" class="js_gallery_modal"
+                            data-group="gallery_modal"><img src="./images/pc_gallary_05-100.jpg" alt=""></a>
                     </picture>
                 </div>
                 <div>
                     <picture>
                         <source srcset="./images/pc_gallary_01-100.jpg" media="(max-width:767px)">
-                        <img src="./images/pc_gallary_01-100.jpg" alt="">
+                        <a href="./images/pc_gallary_01-100.jpg" class="js_gallery_modal"
+                            data-group="gallery_modal"><img src="./images/pc_gallary_01-100.jpg" alt=""></a>
                     </picture>
                 </div>
                 <div>
                     <picture>
                         <source srcset="./images/mobile_gallery_02-100.jpg" media="(max-width:767px)">
-                        <img src="./images/pc_gallary_02-100.jpg" alt="">
+                        <a href="./images/pc_gallary_02-100.jpg" class="js_gallery_modal"
+                            data-group="gallery_modal"><img src="./images/pc_gallary_02-100.jpg" alt=""></a>
                     </picture>
                 </div>
             </div>
     </section>
+
+
     <section id=" event" class="event">
         <div class="event_content">
             <div class="event_image">
@@ -228,18 +238,19 @@
                 arrows: false
             })
 
-            $('.gallery_photo').slock({
-                infinite: false,
+            $('.gallery_photo').slick({
+                infinite: true,
                 speed: 300,
                 slidesToShow: 5,
                 slidesToScroll: 1,
                 responsive: [{
                     breakpoint: 767,
                     settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 3,
-                        infinite: false,
+                        infinite: true,
                         speed: 300,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+
                     }
                 }]
             })
