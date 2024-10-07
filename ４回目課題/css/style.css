@@ -270,6 +270,9 @@ header {
   border-right: 3px solid white;
   transform: rotate(-135deg);
 }
+.lb-number {
+  display: none !important;
+}
 
 /* event */
 .event {
